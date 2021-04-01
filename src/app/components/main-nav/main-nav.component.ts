@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { UtilsService } from 'src/app/services';
 
 @Component({
   selector: 'app-main-nav',
@@ -10,12 +11,14 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class MainNavComponent {
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
+  isHandset$: Observable<boolean> = this._utilService.isHandset$;
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private _utilService: UtilsService,
+  ) { }
+
+  poweredByEragapTech(){
+    window.open(`https://eragap.co.in`, "_blank");
+  }
 
 }
