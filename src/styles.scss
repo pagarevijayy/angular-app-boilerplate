@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+// index.scss has all the reusable gloabal styles.
+@import "./assets/scss/index.scss"; 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Poppins', "Helvetica Neue", sans-serif; }
+
+// variables
+:root {
+    --bg_color_light: #F8F9FA;
+    
+    --text_light_primary: #ffffff;
+    --text_dark_primary: #333333;
+    --text_dark_secondary: #666666;
+  
+    --whatsapp_theme_dark_color: #197278;
+    --whatsapp_theme_color: #25D366;
+  }
+  
