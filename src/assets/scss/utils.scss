@@ -1,0 +1,51 @@
+/*
+utility css classes
+- text color
+- font size
+- general purpose
+*/
+
+.primary-text {
+  color: var(--text_dark_primary, #333333);
+}
+
+.secondary-text {
+  color: var(--text_dark_secondary, #666666);
+}
+
+.primary-text-light {
+  color: var(--text_light_primary, #ffffff);
+}
+
+.fs-12 {
+  font-size: 0.75em;
+}
+
+.fs-14 {
+  font-size: 0.875em;
+}
+
+.fs-16 {
+  font-size: 1em;
+}
+
+.fs-18 {
+  font-size: 1.125em;
+}
+
+.fs-24 {
+  font-size: 1.5em;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// loading spinner wrapper for mat spinner
+.loading-spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
